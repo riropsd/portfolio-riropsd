@@ -905,3 +905,23 @@ body {
     display: block;
     object-fit: contain;
 }
+/* CORREÇÃO DA LOGO NO CELULAR */
+@media (max-width: 768px) {
+    .logo {
+        width: 150px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+        max-width: 150px;
+        display: block;
+        object-fit: contain;
+        position: static;
+    }
+}
