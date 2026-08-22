@@ -892,37 +892,16 @@ body {
     }
 }
 .logo {
-    position: relative;
     width: 190px;
     height: 55px;
-    overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .logo img {
-    width: 300px;
-    height: 300px;
-    max-width: none;
-    flex-shrink: 0;
+    width: 180px;
+    height: auto;
+    max-width: 100%;
+    display: block;
     object-fit: contain;
-}
-.logo {
-    position: relative;
-    width: 190px;
-    height: 55px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo img {
-    width: 850px !important;
-    height: 850px !important;
-    max-width: none !important;
-    max-height: none !important;
-    object-fit: contain;
-    flex-shrink: 0;
 }
