@@ -1,386 +1,456 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RIROPSD Design Gráfico - Portfólio Profissional</title>
-    <meta name="description" content="Portfólio profissional de design gráfico. Identidade visual, branding, social media e publicidade.">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="RIROPSD — Portfólio profissional de Design Gráfico.">
+  <meta name="theme-color" content="#080706">
+
+  <title>RIROPSD — Design Gráfico</title>
+
+  <link rel="icon" type="image/png" href="logo-riropsd.png">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <!-- NAVEGAÇÃO -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="logo-riropsd.png" alt="RIROPSD Design">
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a class="brand" href="#home" aria-label="RIROPSD">
+        <img src="logo-riropsd.png" alt="Logo RIROPSD">
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main id="home">
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+
+        <div class="hero-copy">
+
+          <p class="eyebrow">
+            DESIGN GRÁFICO • DIREÇÃO DE ARTE
+          </p>
+
+          <h1>
+            Design que dá
+            <span>vida</span>
+            à sua ideia.
+          </h1>
+
+          <p class="hero-text">
+            Criatividade, estratégia e execução visual para transformar
+            marcas, campanhas e projetos em peças que chamam atenção.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="btn btn-primary" href="#projetos">
+              Ver projetos
+            </a>
+
+            <a class="btn btn-ghost" href="#contato">
+              Fale comigo
+            </a>
+
+          </div>
+
+          <div class="hero-meta">
+
+            <div>
+              <strong>30+</strong>
+              <span>anos de experiência</span>
             </div>
 
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#servicos" class="nav-link">Serviços</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div>
+              <strong>100%</strong>
+              <span>foco no impacto visual</span>
             </div>
+
+          </div>
+
         </div>
-    </nav>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="word">RIROPSD</span>
-                </h1>
-                <h2 class="hero-subtitle">Design que dá vida à sua ideia.</h2>
-                <p class="hero-description">
-                    Criatividade, estratégia e execução impecável para transformar sua visão em realidade visual memorável.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                    <a href="#contato" class="btn btn-secondary">Fale Comigo</a>
-                </div>
-            </div>
+
+        <div class="hero-mark" aria-hidden="true">
+
+          <div class="mark-ring"></div>
+
+          <div class="mark-core">
+            R
+          </div>
+
+          <div class="mark-label">
+            RIROPSD
+          </div>
+
         </div>
+
+      </div>
+
     </section>
+
 
     <!-- PROJETOS -->
-    <section id="projetos" class="projetos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Projetos</h2>
-                <p>Trabalhos que refletem criatividade e estratégia</p>
-            </div>
+    <section class="section projects" id="projetos">
 
-            <!-- FILTROS -->
-            <div class="filtros">
-                <button class="filter-btn active" data-filter="todos">Todos</button>
-                <button class="filter-btn" data-filter="identidade">Identidade Visual</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="social">Social Media</button>
-                <button class="filter-btn" data-filter="publicidade">Publicidade</button>
-                <button class="filter-btn" data-filter="embalagens">Embalagens</button>
-            </div>
+      <div class="container">
 
-            <!-- GALERIA -->
-            <div class="galeria">
-                <!-- Projeto 1 -->
-                <div class="projeto-card" data-categoria="identidade">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 1</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Identidade Visual - Startup Tech</h3>
-                        <p class="categoria-badge">Identidade Visual</p>
-                        <p class="projeto-descricao">Logo, cartão de visita, papelaria e guia de marca para startup de tecnologia.</p>
-                    </div>
-                </div>
+        <div class="section-heading">
 
-                <!-- Projeto 2 -->
-                <div class="projeto-card" data-categoria="branding">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 2</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Branding - Café Premium</h3>
-                        <p class="categoria-badge">Branding</p>
-                        <p class="projeto-descricao">Identidade completa, embalagem, rótulos e material promocional para marca de café.</p>
-                    </div>
-                </div>
+          <p class="eyebrow">
+            PORTFÓLIO
+          </p>
 
-                <!-- Projeto 3 -->
-                <div class="projeto-card" data-categoria="social">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 3</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Social Media - Agência de Moda</h3>
-                        <p class="categoria-badge">Social Media</p>
-                        <p class="projeto-descricao">Posts, stories, reels e templates para gerenciamento de redes sociais.</p>
-                    </div>
-                </div>
+          <h2>
+            Projetos que
+            <span>vendem ideias.</span>
+          </h2>
 
-                <!-- Projeto 4 -->
-                <div class="projeto-card" data-categoria="publicidade">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 4</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Campanha Publicitária - Beleza</h3>
-                        <p class="categoria-badge">Publicidade</p>
-                        <p class="projeto-descricao">Banners web, anúncios impressos e materiais para campanha integrada.</p>
-                    </div>
-                </div>
+          <p>
+            Uma seleção de trabalhos de identidade, publicidade,
+            social media e materiais gráficos.
+          </p>
 
-                <!-- Projeto 5 -->
-                <div class="projeto-card" data-categoria="embalagens">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 5</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Embalagem - Produto Cosmético</h3>
-                        <p class="categoria-badge">Embalagens</p>
-                        <p class="projeto-descricao">Design de embalagem, rótulo e diagramação para linha de cosméticos naturais.</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 6 -->
-                <div class="projeto-card" data-categoria="identidade">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 6</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Identidade Visual - Consultoria</h3>
-                        <p class="categoria-badge">Identidade Visual</p>
-                        <p class="projeto-descricao">Logo, manual de marca, templates e assinatura de email para empresa B2B.</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 7 -->
-                <div class="projeto-card" data-categoria="social">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 7</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Social Media - Restaurante</h3>
-                        <p class="categoria-badge">Social Media</p>
-                        <p class="projeto-descricao">Cards de menu, promoções e conteúdo semanal para rede social.</p>
-                    </div>
-                </div>
-
-                <!-- Projeto 8 -->
-                <div class="projeto-card" data-categoria="publicidade">
-                    <div class="projeto-imagem">
-                        <div class="placeholder-image">
-                            <i class="fas fa-image"></i>
-                            <span>Projeto 8</span>
-                        </div>
-                    </div>
-                    <div class="projeto-info">
-                        <h3>Publicidade - Varejo</h3>
-                        <p class="categoria-badge">Publicidade</p>
-                        <p class="projeto-descricao">Flyer, banner de loja e material point of sale para varejo de moda.</p>
-                    </div>
-                </div>
-            </div>
         </div>
+
+
+        <div class="projects-grid">
+
+          <article class="project-card project-a">
+
+            <div class="project-art">
+              <span>01</span>
+            </div>
+
+            <div class="project-info">
+
+              <p>IDENTIDADE VISUAL</p>
+
+              <h3>
+                Marca & posicionamento
+              </h3>
+
+              <span>
+                Branding / Direção de arte
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card project-b">
+
+            <div class="project-art">
+              <span>02</span>
+            </div>
+
+            <div class="project-info">
+
+              <p>PUBLICIDADE</p>
+
+              <h3>
+                Campanha de impacto
+              </h3>
+
+              <span>
+                Key visual / Anúncios
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card project-c">
+
+            <div class="project-art">
+              <span>03</span>
+            </div>
+
+            <div class="project-info">
+
+              <p>SOCIAL MEDIA</p>
+
+              <h3>
+                Conteúdo que destaca
+              </h3>
+
+              <span>
+                Posts / Criativos / Reels
+              </span>
+
+            </div>
+
+          </article>
+
+
+          <article class="project-card project-d">
+
+            <div class="project-art">
+              <span>04</span>
+            </div>
+
+            <div class="project-info">
+
+              <p>EMBALAGEM</p>
+
+              <h3>
+                Produto na prateleira
+              </h3>
+
+              <span>
+                Rótulos / Mockups / Materiais
+              </span>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
+
 
     <!-- SOBRE -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <div class="sobre-content">
-                <div class="sobre-texto">
-                    <h2>Sobre RIROPSD</h2>
-                    <p>
-                        Sou um designer gráfico apaixonado por comunicação visual estratégica. Com experiência em diversos segmentos, especializo-me em criar identidades visuais memoráveis, desenvolver marcas e produzir materiais gráficos que comunicam com impacto.
-                    </p>
-                    <p>
-                        Cada projeto é uma oportunidade de entender sua marca, seus objetivos e seu público. Trabalho com criatividade, pesquisa e execução impecável para transformar ideias em soluções visuais poderosas.
-                    </p>
-                    <p>
-                        Minha expertise abrange identidade de marca, design publicitário, criação de materiais para redes sociais, design de embalagens e muito mais. O resultado? Trabalhos que não apenas atendem ao briefing, mas que superam expectativas.
-                    </p>
-                    <div class="sobre-ctas">
-                        <a href="#contato" class="btn btn-primary">Trabalhar Comigo</a>
-                    </div>
-                </div>
-                <div class="sobre-visual">
-                    <div class="placeholder-image-grande">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Foto Profissional</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section about" id="sobre">
+
+      <div class="container about-grid">
+
+        <div class="about-number">
+          RIRO<span>PSD</span>
         </div>
+
+
+        <div class="about-copy">
+
+          <p class="eyebrow">
+            SOBRE
+          </p>
+
+          <h2>
+            Experiência para transformar
+            briefing em
+            <span>resultado visual.</span>
+          </h2>
+
+          <p>
+            O trabalho une direção de arte, composição, tipografia,
+            identidade e linguagem de marca para criar peças com
+            presença e propósito.
+          </p>
+
+          <p>
+            A prioridade é fugir do visual genérico e construir
+            uma solução que faça sentido para a marca e para quem
+            precisa ser impactado.
+          </p>
+
+        </div>
+
+      </div>
+
     </section>
+
 
     <!-- SERVIÇOS -->
-    <section id="servicos" class="servicos">
-        <div class="container">
-            <div class="section-header">
-                <h2>Serviços</h2>
-                <p>Soluções completas em design gráfico</p>
-            </div>
+    <section class="section services" id="servicos">
 
-            <div class="servicos-grid">
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-pen-nib"></i>
-                    </div>
-                    <h3>Identidade Visual</h3>
-                    <p>Logo, cartão de visita, papelaria, manual de marca e identidade completa para sua empresa.</p>
-                </div>
+      <div class="container">
 
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h3>Branding</h3>
-                    <p>Desenvolvimento de marca estratégico, posicionamento visual e guidelines de identidade.</p>
-                </div>
+        <div class="section-heading">
 
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Social Media</h3>
-                    <p>Posts, stories, reels, templates e materiais para gerenciamento de redes sociais.</p>
-                </div>
+          <p class="eyebrow">
+            O QUE EU FAÇO
+          </p>
 
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-megaphone"></i>
-                    </div>
-                    <h3>Design Publicitário</h3>
-                    <p>Banners, anúncios, flyers, cartazes e campanhas integradas para publicidade impressa e digital.</p>
-                </div>
+          <h2>
+            Design com
+            <span>função.</span>
+          </h2>
 
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-box"></i>
-                    </div>
-                    <h3>Embalagens</h3>
-                    <p>Design de embalagem, rótulos, diagramação e criação de pacotes visuais para produtos.</p>
-                </div>
-
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-print"></i>
-                    </div>
-                    <h3>Artes para Impressão</h3>
-                    <p>Preparação de arquivos, layouts técnicos e direcionamento de arquivos para reprodução gráfica.</p>
-                </div>
-
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-image"></i>
-                    </div>
-                    <h3>Mockups</h3>
-                    <p>Apresentação profissional de projetos em contexto real (embalagem, camiseta, outdoor, etc).</p>
-                </div>
-
-                <div class="servico-card">
-                    <div class="servico-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Materiais Promocionais</h3>
-                    <p>Criação de brinde, material point of sale, adesivos e outros itens de marketing.</p>
-                </div>
-            </div>
         </div>
+
+
+        <div class="services-grid">
+
+          <article class="service">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3>
+              Identidade visual
+            </h3>
+
+            <p>
+              Logotipo, paleta, tipografia, aplicações
+              e direção visual da marca.
+            </p>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3>
+              Publicidade
+            </h3>
+
+            <p>
+              Campanhas, anúncios, peças promocionais
+              e conceitos visuais de alto impacto.
+            </p>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3>
+              Social media
+            </h3>
+
+            <p>
+              Criativos para Instagram, posts, capas,
+              anúncios e organização visual do perfil.
+            </p>
+
+          </article>
+
+
+          <article class="service">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3>
+              Materiais gráficos
+            </h3>
+
+            <p>
+              Embalagens, rótulos, mockups, apresentações,
+              catálogos e materiais promocionais.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
     </section>
+
 
     <!-- CONTATO -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <div class="section-header">
-                <h2>Vamos Criar Algo Incrível?</h2>
-                <p>Entre em contato para discutir seu projeto</p>
-            </div>
+    <section class="section contact" id="contato">
 
-            <div class="contato-content">
-                <div class="contato-info">
-                    <div class="contato-item">
-                        <div class="contato-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contato-text">
-                            <h3>WhatsApp</h3>
-                            <a href="https://wa.me/5585987654321" target="_blank">+55 (85) 98765-4321</a>
-                        </div>
-                    </div>
+      <div class="container contact-box">
 
-                    <div class="contato-item">
-                        <div class="contato-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="contato-text">
-                            <h3>Instagram</h3>
-                            <a href="https://instagram.com/riropsd" target="_blank">@riropsd</a>
-                        </div>
-                    </div>
+        <div>
 
-                    <div class="contato-item">
-                        <div class="contato-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contato-text">
-                            <h3>E-mail</h3>
-                            <a href="mailto:contato@riropsd.com">contato@riropsd.com</a>
-                        </div>
-                    </div>
-                </div>
+          <p class="eyebrow">
+            CONTATO
+          </p>
 
-                <div class="contato-form">
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-                    </form>
-                </div>
-            </div>
+          <h2>
+            Tem uma ideia?
+            <br>
+            <span>Vamos dar forma a ela.</span>
+          </h2>
+
+          <p>
+            Entre em contato para apresentar seu projeto
+            e conversar sobre a melhor solução visual.
+          </p>
+
         </div>
+
+
+        <div class="contact-actions">
+
+          <a
+            class="btn btn-primary"
+            href="https://www.instagram.com/riropsd/"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram @riropsd
+          </a>
+
+          <a class="btn btn-ghost" href="#home">
+            Voltar ao topo
+          </a>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>RIROPSD</h3>
-                    <p>Design Gráfico Profissional</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://instagram.com/riropsd" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/5585987654321" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="mailto:contato@riropsd.com"><i class="fas fa-envelope"></i></a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 RIROPSD Design Gráfico. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
+  </main>
 
-    <script src="js/script.js"></script>
+
+  <footer class="footer">
+
+    <div class="container footer-wrap">
+
+      <span>
+        © 2026 RIROPSD. Todos os direitos reservados.
+      </span>
+
+      <span>
+        Design Gráfico • Direção de Arte
+      </span>
+
+    </div>
+
+  </footer>
+
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
