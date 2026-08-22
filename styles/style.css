@@ -3,13 +3,14 @@
    ============================================ */
 
 :root {
-    --cor-primaria: #1a1a1a;
-    --cor-secundaria: #2d2d2d;
-    --cor-terciaria: #404040;
-    --cor-accent: #00d9ff;
-    --cor-accent-alt: #ff00ff;
-    --cor-texto: #ffffff;
-    --cor-texto-muted: #b0b0b0;
+    :root {
+    --cor-primaria: #0D0B08;
+    --cor-secundaria: #17120B;
+    --cor-terciaria: #2A2115;
+    --cor-accent: #C47A00;
+    --cor-accent-alt: #E09A00;
+    --cor-texto: #FFFFFF;
+    --cor-texto-muted: #B8B1A5;
     --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --fonte-titulo: 'Arial', sans-serif;
     --transicao: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
