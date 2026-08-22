@@ -891,3 +891,17 @@ body {
         font-size: 0.85rem;
     }
 }
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo img {
+    height: 46px;
+    width: auto;
+    max-width: 180px;
+    display: block;
+    object-fit: contain;
+}
