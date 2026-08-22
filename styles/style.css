@@ -1111,3 +1111,132 @@ a {
     width: 100%;
   }
 }
+/* =====================================================
+   ANIMAÇÕES E INTERAÇÕES — RIROPSD
+   ===================================================== */
+
+@keyframes riro-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes riro-pulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes riro-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(224, 154, 0, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 35px rgba(224, 154, 0, 0.18);
+  }
+}
+
+@keyframes riro-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elemento visual do Hero */
+.hero::before {
+  animation: riro-pulse 6s ease-in-out infinite;
+}
+
+/* Movimento sutil do elemento dourado */
+.hero-visual {
+  animation: riro-float 5s ease-in-out infinite;
+}
+
+/* Botões */
+.btn-primary,
+.btn-secondary,
+.btn-enviar {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-enviar:hover {
+  transform: translateY(-4px);
+}
+
+/* Seção de contato */
+.contato {
+  position: relative;
+  overflow: hidden;
+}
+
+.contato::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -200px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(224, 154, 0, 0.08) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: riro-pulse 7s ease-in-out infinite;
+}
+
+/* Campos do formulário */
+.form-contato input,
+.form-contato textarea {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  outline: none;
+  border-color: var(--cor-accent-alt);
+  box-shadow: 0 0 20px rgba(224, 154, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Animação de entrada */
+.contato-container {
+  animation: riro-reveal 0.8s ease both;
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
